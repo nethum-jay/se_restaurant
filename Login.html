@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Images/favicon.ico.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body{ 
+        background: url(Images/background3.png);
+      }
+
+      .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 90vh;
+        color: black;
+      }
+
+      .box{
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        padding: 25px 25px;
+        border-radius: 20px;
+        box-shadow: 0 0 128px 0 rgb(0, 0, 0), 0 32px 64px -48px rgb(0, 0, 0);
+      }
+
+      .form-box{
+        width: 450px;
+        margin: 0px 10px;
+      }
+
+      .form-box header{
+        font-size: 25px;
+        font-weight: 600;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e6e6e6;
+        margin-bottom: 10px;
+      }
+
+      .form-box form .field{
+        display: flex;
+        margin-bottom: 10px;
+        flex-direction: column;
+      }
+
+      .form-box form .input input{
+        height: 40px;
+        width: 100%;
+        font-size: 16px;
+        padding: 0 10px;
+        border: 1px solid #ccc;
+        outline: none;
+      }
+
+      .btn{
+        height: 35px;
+        background: rgba(76 ,68 ,182 ,0.808);
+        border: 0;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all .3s;
+        margin-top: 10px;
+        padding: 0px 10px;
+      }
+
+      .btn:hover{
+        opacity: 0.82;
+      }
+
+      .submit{
+        width: 100%;
+      }
+
+      .link {
+        margin-bottom: 15px;
+      }
+
+    </style>
+
+</head>
+<body>
+  <header>
+    <div class="header">
+        <div class="headerbar">
+            <div class="nav">
+            </div>
+        </div>
+        <div class="logo">
+            <img src="./Images/official logo.png" alt="">
+        </div>
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark" id="hdcross"></i>        
+        </div>
+        <div class="nav">
+            <ul>
+                <a href="Product_Service.html">
+                    <li>Product/Service</li>
+                </a>
+                <a href="Offers.html">
+                    <li>Offers</li>
+                </a>
+                <a href="Facilities.html">
+                    <li>Facilities</li>
+                </a>
+                <a href="Gallery.html">
+                    <li>Gallery</li>
+                </a>
+                <a href="Reservation.html">
+                    <li>Reservation</li>
+                </a>
+                <a href="Overview.html">
+                    <li>Overview Page</li>
+                </a>
+            </ul>
+        </div>
+        <div class="account">
+            <ul>
+                <a href="index.html">
+                    <li>
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </li> 
+                </a>
+                <a href="#">
+                    <li>
+                        <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i>
+                    </li> 
+                </a>
+                <div class="search" id="searchinput2">
+                    <input type="search" >
+                    <i class="fa-solid fa fa-magnifying-glass srchicon"></i>
+                </div>
+
+            </section>
+                <a href="Login.html">
+                    <li>
+                        <i class="fa-solid fa-user" id="user-lap"></i>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</header>
+    <div class="container">
+        <div class="box form-box">
+            <header>Login</header>
+            <form action="" method="post">
+
+                <div class="field input">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" autocomplete="off" required>
+                </div>
+
+                <div class="field input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" autocomplete="off" required>
+                </div>
+
+                <div class="field">
+
+                    <input type="submit" class="btn" name="submit" value="Login" required>
+                </div>
+
+                <div class="links">
+                    Don't have account? <a href="Register.html">Sing Up Now</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-1">
+          <div>
+              <address>
+                  <p>Email: signaturecuisine@gmail.com</p>
+                  <p>Face Book: Signature Cuisine</p>
+                  <p>Mr.Kushan Perera,</br> 26 Havelock Rd, Colombo, 5 Sri Lankan</br> </p> 
+              </address>
+          </div>
+      </div>
+          
+      <div class="footer-2">
+          <h2>Powegreen by <em>Developer NJ@</em></h2>
+      </div>
+  </div>
+  
+
+  <script src="app.js"></script>
+
+
+</body>
+</html>
